@@ -37,7 +37,7 @@ export default function SignUp() {
 
   return (
     <div className="p-3 max-w-lg m-auto">
-      <h1 className="text-xl text-center mb-5 text-slate-500">Sign Up</h1>
+      <h1 className="text-[40px] text-center mb-5 text-slate-800">Sign Up</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
@@ -74,7 +74,7 @@ export default function SignUp() {
         </Link>
       </div>
       <div>
-        <p>{error}</p>
+        <p className="text-red-700">{error}</p>
       </div>
     </div>
   );
