@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { useReducer } from "./user/userSlice";
+import userSlice from "./user/userSlice.js";
 
 export const store = configureStore({
   reducer: {
-    user: useReducer,
+    user: userSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
